@@ -119,6 +119,8 @@ Beyond these, the audience cannot hold the names and the budget cannot hold the 
 
 Short-form drama runs on tropes. This is not a failure of imagination — it is how the format signals its promise in two seconds. The craft is in the *specific execution* of a known trope, not in avoiding it.
 
+> This section is the short version. The full library — seven families, the five-field trope anatomy, combination rules, platform mapping, and per-genre payoff obligations — is in `09-genres-tropes.md`. Read that module when the user brings a genre before a story ("write me a werewolf one"), or when you need to check what a trope owes the audience.
+
 ### 4.1 Vertical drama tropes (English-language market)
 
 | Trope | Engine | What must be specific |

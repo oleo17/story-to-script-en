@@ -38,6 +38,7 @@ Runtime itself isn't chosen — it's derived from **event grains**: one visible 
 
 | Stage | Module | Output |
 |---|---|---|
+| Genre | `09-genres-tropes` | Trope dossier: promise, engine, cost, specificity, minimum grains, payoff obligations |
 | Spec | `00-scale-control` | Spec Card: tier, runtime, grains, scenes, shots, word and dialogue ceilings |
 | Development | `01-development` | Logline, grain spine, character cards, pace profile, project bible |
 | Drafting | `02-script-drafting` | Script (screenplay or vertical short-form format), hook placement |
@@ -123,7 +124,8 @@ story-to-script-en/
 │   ├── 06-storyboard.md              # blocks, 11 shot fields, 9:16 staging
 │   ├── 06b-action-direction.md       # fight/chase contracts and rhythm
 │   ├── 07-video-prompts.md           # per-model prompt dialects
-│   └── 08-post-sound.md              # BGM curve, cue sheet, mix targets
+│   ├── 08-post-sound.md              # BGM curve, cue sheet, mix targets
+│   └── 09-genres-tropes.md           # 7 trope families, combination rules, payoff audit
 └── agents/openai.yaml                # display name and default prompt
 ```
 

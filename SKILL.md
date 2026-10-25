@@ -1,6 +1,6 @@
 ---
 name: story-to-script-en
-description: Use this skill when writing any kind of screen script — vertical short dramas (ReelShort/DramaBox style), TikTok/Reels/Shorts content, narrative ads, animated shorts, motion-comic scripts, AI-video storyboards, or dialogue polish. It locks a shot/word/duration budget before writing, then carries the project from concept and outline to finished script, script doctoring, dialogue pass, asset and continuity bible, shot list, video-model prompts (Veo, Sora, Runway, Kling, Seedance, MiniMax), and post-production sound design. Every density rule is calibrated against English speech rates, not translated from another language. Use it when the user says write me a short film, fix my script, my dialogue sounds flat, build me a shot list, write video prompts, or design the sound for this cut.
+description: Use this skill when writing any kind of screen script — vertical short dramas (ReelShort/DramaBox style), TikTok/Reels/Shorts content, narrative ads, animated shorts, motion-comic scripts, AI-video storyboards, or dialogue polish. It locks a shot/word/duration budget before writing, then carries the project from genre and trope selection through concept and outline to finished script, script doctoring, dialogue pass, asset and continuity bible, shot list, video-model prompts (Veo, Sora, Runway, Kling, Seedance, MiniMax), and post-production sound design. Every density rule is calibrated against English speech rates, not translated from another language. Use it when the user says write me a short film, fix my script, my dialogue sounds flat, build me a shot list, write video prompts, design the sound for this cut, or asks which genre or trope to write in for a platform.
 ---
 
 # story-to-script — English Edition
@@ -117,6 +117,7 @@ Read the row that matches the request. Do not read adjacent modules "for context
 
 | The user wants | Read | Output | Default next |
 |---|---|---|---|
+| Choose a genre or trope, or position a concept against the market | `references/09-genres-tropes.md` | Trope dossier: promise, engine, cost, specificity, min grains, payoff obligations | `01` → grain spine |
 | Develop a concept, premise, character relationship, one-line idea | `references/01-development.md` | Logline, premise, beat outline, project bible, platform pace profile | `02` → draft |
 | Write or extend the full script, a scene, an episode | `references/02-script-drafting.md` | Draft script, pacing execution log | Script doctor pass |
 | Diagnose an existing outline, scene, or script | `references/03-script-doctor.md` | Issue list, priority ranking, structural health check | Back to drafting |
@@ -130,7 +131,7 @@ Read the row that matches the request. Do not read adjacent modules "for context
 ### Recommended flow
 
 ```text
-00 spec lock → 01 development → 02 draft → 03 doctor → 04 dialogue
+09 tropes → 00 spec lock → 01 development → 02 draft → 03 doctor → 04 dialogue
       → 05 assets → 06 storyboard → 07 prompts → 08 sound
 ```
 
@@ -183,3 +184,9 @@ Full derivation, per-format tables, and the exceptions are in `references/00-sca
 ## Maintenance
 
 Version and change log belong in this file, at the bottom, newest first. Reference files carry no version headers of their own — this file is the single source of truth for what changed when.
+
+### Change log
+
+**v1.1** — Added `references/09-genres-tropes.md`. Seven trope families (~45 tropes) with promise / engine / cost / specificity / collapse fields; eight worked tropes with 3-second hooks, grain spines, and episode-2 problems; trope combination rules with an engine-conflict test; platform mapping by episode and series length; trope-to-budget conversion (minimum grains per family); per-genre payoff obligations; English-market calibration (untranslatable terms, class through objects, consent boundary, native werewolf vocabulary); and late-2026 market positioning. Routing table and flow updated to put trope selection ahead of development.
+
+**v1.0** — Initial English edition. Native rewrite, not a translation: speech rates calibrated for English (2.5 wps conversational, 2.2 wps script body), US screenplay format alongside vertical short-form format.
