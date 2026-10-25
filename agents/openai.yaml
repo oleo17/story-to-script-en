@@ -1,0 +1,4 @@
+interface:
+  display_name: "story-to-script-en — Screenwriting"
+  short_description: "Budget-first screenwriting: vertical drama, shorts, ads, AI-video shot lists and model prompts"
+  default_prompt: "Use story-to-script-en to take this from premise to production: lock a runtime/word/shot budget, draft, doctor, then build the shot list and video-model prompts."

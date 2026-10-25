@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# 环境与密钥
+.env
+.env.*
+*.key
+secrets/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
