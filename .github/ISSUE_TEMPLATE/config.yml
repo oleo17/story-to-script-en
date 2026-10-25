@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & craft discussion
+    url: https://github.com/oleo17/story-to-script-en/discussions
+    about: Ask about a trope, post a script that blew its budget, or argue with a rule. Issues are for bugs and stale model docs.
+  - name: Chinese edition
+    url: https://github.com/oleo17/story-to-script
+    about: 中文版 — different speech rates, formats and trope pool. Not a translation of this one.

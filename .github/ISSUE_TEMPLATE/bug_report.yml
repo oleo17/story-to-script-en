@@ -1,0 +1,61 @@
+name: Bug report
+description: Skipped a step, blew the budget, or produced something the skill says it never does.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most reports here are budget failures. The numbers make the diagnosis possible — fill in the fields rather than describing the result loosely.
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - Claude Code
+        - OpenAI Codex
+        - Cursor
+        - Gemini CLI
+        - GitHub Copilot / VS Code
+        - WorkBuddy
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and version
+      placeholder: claude-sonnet-4-5 / gpt-5-codex / gemini-3-pro
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: What you asked for
+      description: Paste it verbatim. Trim only what is not part of the request.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: Which module it read or skipped, and the numbers it produced — runtime, word count, shot count.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What the skill says it should do
+      description: Quote the rule — §0.4, a tier ceiling, the grain formula, a minimum grain count from 09.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: The skill folder is the latest version
+          required: true
+        - label: I read the module the skill was supposed to follow
+          required: false
