@@ -39,7 +39,7 @@ Four grains means an 80-second ceiling. That number gets decided before the draf
 git clone https://github.com/oleo17/story-to-script-en.git ~/.claude/skills/story-to-script-en
 ```
 
-Restart the session, then describe the job — "write me a 60-second vertical drama about a courier who delivers to his ex" — or name the skill directly with `/story-to-script-en`.
+Restart the session, then describe the job — "write me a 60-second vertical drama about The long-lost sister turned out to be my ex" — or name the skill directly with `/story-to-script-en`.
 
 Other tools and multi-agent setups: [Install](#install).
 
